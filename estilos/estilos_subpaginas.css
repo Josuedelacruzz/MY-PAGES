@@ -1,0 +1,366 @@
+/* ==========================================
+   ESTILOS EXCLUSIVOS PARA SUBPÁGINAS
+   ========================================== */
+
+/* Header Form Mini */
+.header-mini-form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-mini-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-mini-row input {
+    padding: 14px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    font-family: var(--font-main, 'Inter', sans-serif);
+    font-size: 14px;
+    color: var(--color-text-dark, #333);
+    flex: 1;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.form-mini-row input:focus {
+    outline: none;
+    border-color: var(--color-accent, #5bc2e7);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    background: #ffffff;
+}
+
+.form-mini-row .btn-solid-accent {
+    margin-top: 0;
+    padding: 14px 25px;
+    min-width: 180px;
+    white-space: nowrap;
+}
+
+#mensaje-estado-header {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Detalles de Servicios */
+.seccion-servicio-detalle {
+    padding: 100px 0;
+}
+
+.seccion-servicio-detalle .container-section {
+    max-width: 1450px; /* Mucho más amplio para que la cuadrícula imagen-texto respire y no quede limitada */
+}
+
+.servicio-detalle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.servicio-detalle-grid .servicio-img {
+    max-width: 100%; /* Elimina la restricción del max-width: 50% del css principal */
+}
+
+.servicio-detalle-grid .servicio-img img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    max-width: 100%; /* Elimina la restricción de 500px del css principal */
+    object-fit: cover;
+    border-radius: var(--radius-lg, 24px);
+    box-shadow: var(--shadow-lg, 0 20px 40px -10px rgba(0,0,0,0.12));
+    transition: transform 0.4s ease;
+}
+
+.servicio-detalle-grid .servicio-img:hover img {
+    transform: translateY(-10px);
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.lista-beneficios li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--color-text-muted, #475569);
+}
+
+.lista-beneficios li i {
+    color: var(--color-primary, #003366);
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+.proceso-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.proceso-steps.horizontal-steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.horizontal-steps .step {
+    flex: 1;
+    min-width: 250px;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: var(--shadow-md, 0 10px 25px -5px rgba(0,0,0,0.08));
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--color-bg-white, #ffffff);
+    padding: 14px 20px;
+    border-radius: var(--radius-md, 16px);
+    box-shadow: var(--shadow-sm, 0 4px 6px -1px rgba(0,0,0,0.05));
+    font-weight: 600;
+    border-left: 4px solid var(--color-primary, #003366);
+    color: var(--color-text-dark, #001a33);
+}
+
+.step span {
+    background: var(--color-primary, #003366);
+    color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Sectores Tributarios */
+.sectores-detalle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.sector-detalle-card {
+    background: var(--color-bg-white, #ffffff);
+    padding: 35px 30px;
+    border-radius: var(--radius-md, 16px);
+    box-shadow: var(--shadow-sm, 0 4px 6px -1px rgba(0,0,0,0.05));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sector-detalle-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg, 0 20px 40px -10px rgba(0,0,0,0.12));
+    border-top-color: var(--color-accent, #5bc2e7);
+}
+
+.sector-detalle-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.35rem;
+    color: var(--color-primary, #003366);
+}
+
+.sector-detalle-card p {
+    color: var(--color-text-muted, #475569);
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.7;
+    flex: 1;
+}
+
+.sector-icon {
+    font-size: 45px;
+    color: var(--color-secondary, #005a9c);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.sector-detalle-card:hover .sector-icon {
+    transform: scale(1.1);
+}
+
+.btn-text {
+    color: var(--color-secondary, #005a9c);
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.btn-text:hover {
+    gap: 12px;
+    color: var(--color-primary, #003366);
+}
+
+/* Comentarios / Opiniones */
+.comentarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.comentario-card {
+    background: var(--color-bg-white, #ffffff);
+    padding: 35px;
+    border-radius: var(--radius-lg, 24px);
+    box-shadow: var(--shadow-md, 0 10px 25px -5px rgba(0,0,0,0.08));
+    position: relative;
+    border: 1px solid var(--color-border, #e9ecef);
+}
+
+.comentario-card .estrellas {
+    color: #fbbf24;
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.comentario-texto {
+    font-style: italic;
+    color: var(--color-text-muted, #475569);
+    margin-bottom: 25px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.comentario-autor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.autor-info h5 {
+    margin: 0 0 4px 0;
+    font-size: 1.05rem;
+    color: var(--color-primary, #003366);
+}
+
+.autor-info span {
+    font-size: 0.85rem;
+    color: var(--color-text-muted, #475569);
+}
+
+.fecha-comentario {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* Formulario Comentarios */
+.formulario-comentario-wrapper {
+    background: var(--color-bg-white, #ffffff);
+    padding: 45px;
+    border-radius: var(--radius-lg, 24px);
+    box-shadow: var(--shadow-md, 0 10px 25px -5px rgba(0,0,0,0.08));
+    max-width: 750px;
+    margin: 0 auto;
+    border: 1px solid var(--color-border, #e9ecef);
+}
+
+.estrellas-input {
+    display: flex;
+    gap: 8px;
+    color: #e2e8f0;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.estrellas-input i.active {
+    color: #fbbf24;
+}
+
+.estrellas-input i:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Utilidades adicionales */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.subtitulo-central { 
+    text-align: center; 
+    font-size: 1.15rem; 
+    color: var(--color-text-muted, #475569); 
+    margin-top: -10px; 
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.texto-central { 
+    text-align: center; 
+    max-width: 850px; 
+    margin: 0 auto; 
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: var(--color-text-dark, #333);
+}
+
+/* Ajustes Responsive Especiales */
+@media (max-width: 992px) {
+    .servicio-detalle-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicio-detalle-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-mini-row {
+        flex-direction: column;
+    }
+    
+    .form-mini-row input, .form-mini-row button {
+        width: 100%;
+    }
+    
+    .seccion-servicio-detalle {
+        padding: 60px 0;
+    }
+    
+    .formulario-comentario-wrapper {
+        padding: 30px 20px;
+    }
+}

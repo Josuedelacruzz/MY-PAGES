@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Servicios | MBA Asesoría & Consultoría</title>
+
+    <link rel="icon" href="/imagenes/LOGO MBA.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Archivo principal y el específico de la subpágina -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos_subpaginas.css">
+</head>
+
+<body>
+    <!-- ==========================================
+         SECCIÓN HERO Y NAVEGACIÓN
+         ========================================== -->
+    <header class="header header-full-bg">
+        <div class="header-overlay"></div>
+        <!-- ==========================================
+             MENÚ DE NAVEGACIÓN (EFECTO STICKY)
+             ========================================== -->
+        <div id="nav-wrapper" class="nav-wrapper">
+            <div class="contenedor">
+                <div class="encabezado fade-in-down">
+                    <a href="../index.html" class="logo-empresa">
+                        <img src="../imagenes/LOGO MBA.png" alt="Logo Estudio Contable MBA" class="logo-img">
+                    </a>
+                    <div class="nav-container">
+                        <div class="menu-toggle" id="mobile-menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <nav class="menu menu-blanco" id="nav-menu">
+                            <ul>
+                                <li><a href="../index.html#sobre"
+                                        style="color:inherit; text-decoration:none;">Nosotros</a></li>
+                                <li class="dropdown">
+                                    <a href="#" style="color:inherit; text-decoration:none;">Servicios</a> <span
+                                        class="arrow">▼</span>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#asesoramiento-contable">Asesoramiento Contable</a></li>
+                                        <li><a href="#tributario-empresarial">Tributario Empresarial</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../index.html#carrusel"
+                                        style="color:inherit; text-decoration:none;">Galería</a></li>
+                                <li><a href="#contacto" style="color:inherit; text-decoration:none;">Contacto</a></li>
+                                <li><a href="../index.html#cv"
+                                        style="color:inherit; text-decoration:none;">Currículum</a></li>
+                            </ul>
+                        </nav>
+                        <a class="nav-btn-whatsapp nav-btn-destacado" href="https://wa.me/51994076369" target="_blank">
+                            WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor hero-contenedor">
+            <div class="hero-contenido-inferior" style="margin-top: 80px;">
+                <div class="hero-texto fade-in-up text-center">
+                    <div class="hero-subtitulo" style="justify-content: center;">
+                        <span class="linea-vertical"></span> SERVICIOS ESPECIALIZADOS
+                    </div>
+                    <h1>Soluciones Integrales para tu Negocio</h1>
+                    <p style="margin: 0 auto 30px; max-width: 800px; text-align: center;">Descubre cómo podemos ayudarte
+                        a optimizar la gestión contable y tributaria de tu empresa con nuestra amplia experiencia.</p>
+
+                    <!-- FORMULARIO DEL HEADER -->
+                    <div class="header-mini-form">
+                        <form id="form-header-sheets">
+                            <div class="form-mini-row">
+                                <input type="text" name="nombre" placeholder="Nombre completo *" required>
+                                <input type="text" name="empresa" placeholder="Empresa o negocio">
+                                <input type="email" name="correo" placeholder="Correo electrónico *" required>
+                                <button type="submit" class="btn-solid-accent" id="btn-enviar-header">Solicitar
+                                    asesoría</button>
+                            </div>
+                            <div id="mensaje-estado-header" class="mensaje-estado"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="scroll-down-icon fade-in-up" style="animation-delay: 0.5s; justify-content: center;">
+                <a href="#asesoramiento-contable">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         SERVICIO: ASESORAMIENTO CONTABLE
+         ========================================== -->
+    <section id="asesoramiento-contable" class="seccion-clara seccion-servicio-detalle">
+        <div class="container-section">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Asesoramiento Contable</h2>
+                <div class="linea-adorno"></div>
+            </div>
+
+            <div class="servicio-detalle-grid">
+                <div class="servicio-img fade-in-left">
+                    <img src="../imagenes/1.jpg" alt="Asesoramiento Contable">
+                </div>
+                <div class="servicio-info fade-in-up">
+                    <div class="servicio-etiqueta"><span class="punto"></span> CUMPLIMIENTO Y PRECISIÓN</div>
+                    <p class="servicio-destacado" style="font-size: 1.25rem;">Registro exacto y análisis profundo para
+                        el control total.</p>
+                    <p>Nos encargamos del registro y análisis de todas tus operaciones, gestión de libros contables,
+                        elaboración de balances y presentación de estados financieros bajo NIIF. Obtén una visión clara
+                        de tu negocio en todo momento.</p>
+
+                    <h4 class="mt-4">Beneficios principales:</h4>
+                    <ul class="lista-beneficios mt-2">
+                        <li><i class="fa-solid fa-circle-check"></i> Información financiera precisa y oportuna para la
+                            gerencia.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Cumplimiento estricto y a tiempo de normativas
+                            vigentes.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Prevención de multas y contingencias legales.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CONTENIDO DE ANCHO COMPLETO -->
+            <div class="servicio-full-width fade-in-up mt-5">
+                <h4 class="mt-4 text-center" style="font-size: 1.5rem; color: var(--color-primary);">¿Por qué elegir
+                    este servicio?</h4>
+                <p class="text-center mt-3"
+                    style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.1rem; color: var(--color-text-muted);">
+                    Nuestro equipo de expertos garantiza la confidencialidad y la aplicación de las mejores prácticas
+                    contables, asegurando la salud financiera de su empresa mientras usted se enfoca en hacerla crecer.
+                </p>
+
+                <h4 class="mt-5 text-center"
+                    style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 30px;">Proceso de trabajo</h4>
+                <div class="proceso-steps horizontal-steps">
+                    <div class="step"><span>1</span> Evaluación Inicial de la Empresa</div>
+                    <div class="step"><span>2</span> Organización y Registro Documental</div>
+                    <div class="step"><span>3</span> Análisis y Elaboración de Balances</div>
+                    <div class="step"><span>4</span> Entrega de Reportes Financieros</div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="https://wa.me/51994076369?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Asesoramiento%20Contable."
+                        target="_blank" class="btn-servicio-wsp" style="display:inline-flex;">
+                        Solicitar Asesoría
+                        <span class="icono-btn"><i class="fa-brands fa-whatsapp"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICIO: TRIBUTARIO EMPRESARIAL
+         ========================================== -->
+    <section id="tributario-empresarial" class="seccion-gris seccion-servicio-detalle">
+        <div class="container-section">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Tributario Empresarial</h2>
+                <div class="linea-adorno"></div>
+                <p class="subtitulo-central mt-3">Expertos en diversos sectores económicos con regulación específica.
+                </p>
+            </div>
+
+            <p class="texto-central fade-in-up">Brindamos asesoría tributaria altamente especializada, adaptada a las
+                normativas de tu industria. Optimizamos tu carga fiscal garantizando siempre eficiencia, transparencia y
+                el fiel cumplimiento ante la SUNAT.</p>
+
+            <div class="sectores-detalle-grid mt-5">
+                <!-- Pesqueras -->
+                <div class="sector-detalle-card fade-in-up">
+                    <div class="sector-icon"><i class="fa-solid fa-ship"></i></div>
+                    <h3>Empresas Pesqueras</h3>
+                    <p>Asesoría especializada en regímenes de pesca, control de detracciones, exportación de productos
+                        hidrobiológicos y auditorías preventivas frente a regulaciones marítimas.</p>
+                    <a href="https://wa.me/51994076369?text=Hola,%20busco%20asesoría%20tributaria%20para%20empresa%20Pesquera"
+                        target="_blank" class="btn-text">Consultar <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Comerciales -->
+                <div class="sector-detalle-card fade-in-up" style="animation-delay: 0.1s">
+                    <div class="sector-icon"><i class="fa-solid fa-store"></i></div>
+                    <h3>Empresas Comerciales</h3>
+                    <p>Gestión eficiente del IGV, control de inventarios, comprobantes electrónicos y planeamiento
+                        fiscal. Maximizamos el rendimiento de importadores, distribuidores y retail.</p>
+                    <a href="https://wa.me/51994076369?text=Hola,%20busco%20asesoría%20tributaria%20para%20empresa%20Comercial"
+                        target="_blank" class="btn-text">Consultar <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Artísticas -->
+                <div class="sector-detalle-card fade-in-up" style="animation-delay: 0.2s">
+                    <div class="sector-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Empresas Artísticas</h3>
+                    <p>Tratamiento tributario integral para eventos, espectáculos, derechos de autor y retenciones
+                        específicas por contratos de artistas nacionales e internacionales.</p>
+                    <a href="https://wa.me/51994076369?text=Hola,%20busco%20asesoría%20tributaria%20para%20empresa%20Artística"
+                        target="_blank" class="btn-text">Consultar <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Constructoras -->
+                <div class="sector-detalle-card fade-in-up" style="animation-delay: 0.3s">
+                    <div class="sector-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>Constructoras</h3>
+                    <p>Dominio del Régimen de Construcción Civil, control de costos por valorización de obra, correcta
+                        aplicación del IGV y manejo experto del SIRE para el sector.</p>
+                    <a href="https://wa.me/51994076369?text=Hola,%20busco%20asesoría%20tributaria%20para%20Constructora"
+                        target="_blank" class="btn-text">Consultar <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Servicios Generales -->
+                <div class="sector-detalle-card fade-in-up" style="animation-delay: 0.4s">
+                    <div class="sector-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Servicios Generales</h3>
+                    <p>Planeamiento tributario estratégico para agencias, consultoras, outsourcing y profesionales
+                        independientes. Aseguramos la máxima rentabilidad de tus servicios.</p>
+                    <a href="https://wa.me/51994076369?text=Hola,%20busco%20asesoría%20tributaria%20para%20Servicios%20Generales"
+                        target="_blank" class="btn-text">Consultar <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 fade-in-up">
+                <a href="https://wa.me/51994076369?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20Tributario%20Empresarial."
+                    target="_blank" class="btn-servicio-wsp" style="display:inline-flex;">
+                    Solicitar Asesoría General
+                    <span class="icono-btn"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         OPINIONES DE CLIENTES (NUEVA SECCIÓN)
+         ========================================== -->
+    <section class="seccion-clara seccion-servicio-detalle">
+        <div class="container-section">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Opiniones de nuestros clientes</h2>
+                <div class="linea-adorno"></div>
+            </div>
+
+            <div class="comentarios-grid">
+                <!-- Comentario 1 -->
+                <div class="comentario-card fade-in-up">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comentario-texto">"Gracias a MBA Asesoría pudimos ordenar nuestra contabilidad y evitar
+                        multas que nos tenían preocupados. Son un equipo muy profesional y siempre están dispuestos a
+                        ayudar."</p>
+                    <div class="comentario-autor">
+                        <div class="autor-avatar"><i class="fa-solid fa-user-circle"
+                                style="font-size:40px; color:#cbd5e1;"></i></div>
+                        <div class="autor-info">
+                            <h5>Carlos Mendoza</h5>
+                            <span>Gerente, Empresa Comercial</span>
+                        </div>
+                    </div>
+                    <span class="fecha-comentario">12 May 2025</span>
+                </div>
+
+                <!-- Comentario 2 -->
+                <div class="comentario-card fade-in-up" style="animation-delay: 0.1s">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comentario-texto">"El asesoramiento en el sector pesquero es inigualable. Tienen un
+                        dominio profundo de la normativa que nos permitió optimizar nuestros procesos tributarios
+                        significativamente."</p>
+                    <div class="comentario-autor">
+                        <div class="autor-avatar"><i class="fa-solid fa-user-circle"
+                                style="font-size:40px; color:#cbd5e1;"></i></div>
+                        <div class="autor-info">
+                            <h5>María Fernanda López</h5>
+                            <span>Directora, Sector Pesquero</span>
+                        </div>
+                    </div>
+                    <span class="fecha-comentario">28 Abr 2025</span>
+                </div>
+
+                <!-- Comentario 3 -->
+                <div class="comentario-card fade-in-up" style="animation-delay: 0.2s">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="comentario-texto">"Excelente servicio. Me guiaron paso a paso en la formalización de mi
+                        constructora y ahora llevan toda nuestra contabilidad de manera impecable."</p>
+                    <div class="comentario-autor">
+                        <div class="autor-avatar"><i class="fa-solid fa-user-circle"
+                                style="font-size:40px; color:#cbd5e1;"></i></div>
+                        <div class="autor-info">
+                            <h5>Jorge Ramírez</h5>
+                            <span>CEO, Constructora JR</span>
+                        </div>
+                    </div>
+                    <span class="fecha-comentario">05 Mar 2025</span>
+                </div>
+            </div>
+
+            <!-- Formulario de nuevo comentario -->
+            <div class="formulario-comentario-wrapper fade-in-up mt-5">
+                <h3 class="text-center" style="margin-bottom: 25px; color: var(--color-primary);">Déjanos tu opinión
+                </h3>
+                <form id="form-comentario"
+                    onsubmit="event.preventDefault(); alert('¡Gracias por tu comentario! Será revisado por un administrador antes de publicarse.'); this.reset(); resetStars();">
+                    <div class="form-row">
+                        <div class="grupo-input">
+                            <label>Nombre completo *</label>
+                            <input type="text" required placeholder="Tu nombre">
+                        </div>
+                        <div class="grupo-input">
+                            <label>Empresa (Opcional)</label>
+                            <input type="text" placeholder="Tu empresa">
+                        </div>
+                    </div>
+                    <div class="grupo-input" style="margin-bottom: 15px;">
+                        <label>Calificación *</label>
+                        <div class="estrellas-input" id="star-rating">
+                            <i class="fa-solid fa-star" data-rating="1"></i>
+                            <i class="fa-solid fa-star" data-rating="2"></i>
+                            <i class="fa-solid fa-star" data-rating="3"></i>
+                            <i class="fa-solid fa-star" data-rating="4"></i>
+                            <i class="fa-solid fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="rating-value" required value="5">
+                    </div>
+                    <div class="grupo-input">
+                        <label>Tu Comentario *</label>
+                        <textarea rows="4" required placeholder="Escribe tu experiencia..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-principal" style="min-width: 200px;">Publicar
+                            comentario</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN CONTACTO (IGUAL A LA PRINCIPAL)
+         ========================================== -->
+    <section id="contacto" class="seccion-contacto">
+        <div class="container-section">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Conecta con MBA</h2>
+                <div class="linea-adorno"></div>
+            </div>
+            <div class="contacto-wrapper fade-in-up">
+                <div class="contacto-info">
+                    <h4>Información de Contacto</h4>
+                    <p class="contacto-desc">Escríbenos o visítanos. Estamos listos para optimizar la contabilidad y
+                        finanzas de tu empresa.</p>
+                    <ul class="lista-contacto">
+                        <li>
+                            <span class="icono-contacto"><i class="fa-solid fa-location-dot"></i></span>
+                            <div class="detalle-contacto">
+                                <strong>Oficina Principal</strong>
+                                <span>Atención presencial en Vice.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icono-contacto"><i class="fa-regular fa-envelope"></i></span>
+                            <div class="detalle-contacto">
+                                <strong>Correo Electrónico</strong>
+                                <span>estudiocontablemba2404@gmail.com</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icono-contacto"><i class="fa-solid fa-phone"></i></span>
+                            <div class="detalle-contacto">
+                                <strong>Teléfono</strong>
+                                <span>+51 994 076 369</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contacto-formulario">
+                    <form id="form-google-sheets">
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                            </div>
+                            <div class="grupo-input">
+                                <label for="empresa">Empresa o Negocio</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa (opcional)">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="ruc">Número de RUC</label>
+                                <input type="text" id="ruc" name="ruc" placeholder="Ej. 20123456789 (opcional)">
+                            </div>
+                            <div class="grupo-input">
+                                <label for="correo">Correo electrónico *</label>
+                                <input type="email" id="correo" name="correo" required placeholder="correo@empresa.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="telefono">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número">
+                            </div>
+                            <div class="grupo-input">
+                                <label for="servicio">Servicio de interés *</label>
+                                <div class="select-wrapper">
+                                    <select id="servicio" name="servicio" required>
+                                        <option value="" disabled selected>Selecciona un servicio</option>
+                                        <option value="Contabilidad General">Contabilidad General</option>
+                                        <option value="Asesoría Tributaria">Asesoría Tributaria</option>
+                                        <option value="Finanzas Corporativas">Finanzas Corporativas</option>
+                                        <option value="Outsourcing Contable">Outsourcing Contable</option>
+                                        <option value="No lo sé / Quiero asesoría para elegir">No lo sé / Quiero
+                                            asesoría para elegir</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grupo-input">
+                            <label for="mensaje">Mensaje o consulta *</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required
+                                placeholder="Detalla tu consulta..."></textarea>
+                        </div>
+                        <button type="submit" id="btn-enviar" class="btn-principal ancho-completo">Enviar
+                            Mensaje</button>
+                        <div id="mensaje-estado" class="mensaje-estado"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-profesional">
+        <div class="footer-top">
+            <div class="contenedor footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="../imagenes/LOGO MBA.png" alt="Logo Estudio Contable MBA" class="logo-img"
+                            style="margin-bottom: 20px; max-height: 80px;">
+                    </div>
+                    <p>Transformamos números en estrategias. Soluciones contables, tributarias y financieras para el
+                        crecimiento y éxito de tu negocio.</p>
+                    <div class="redes-sociales">
+                        <a href="https://www.facebook.com/profile.php?id=100092338925636" target="_blank"
+                            class="icono-red"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icono-red"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icono-red"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html#sobre">Nosotros</a></li>
+                        <li><a href="javascript:void(0)"
+                                onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Servicios</a></li>
+                        <li><a href="../index.html#carrusel">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuestros Servicios</h4>
+                    <ul>
+                        <li><a href="#asesoramiento-contable">Asesoramiento Contable</a></li>
+                        <li><a href="#tributario-empresarial">Tributario Empresarial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contacto">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="https://maps.app.goo.gl/Wovm9vbF8Jiqnr1x7" target="_blank"><span>Vice y toda la
+                                    región Piura</span></a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=estudiocontablemba2404@gmail.com&"
+                                target="_blank"><span>estudiocontablemba2404@gmail.com</span></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+51 994 076 369</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="contenedor">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 MBA Asesoría & Consultoría. Todos los derechos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Políticas de Privacidad</a>
+                        <span class="separador">|</span>
+                        <a href="#">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // ==========================================
+        // ⚙️ LÓGICA DEL MENÚ HAMBURGUESA
+        // ==========================================
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+
+        // ==========================================
+        // ⚙️ LÓGICA DE NAVEGACIÓN POR SCROLL SUAVE (Local)
+        // ==========================================
+        document.querySelectorAll('.menu ul li').forEach(item => {
+            item.addEventListener('click', function (e) {
+                // Permitir enlaces normales
+                if (e.target.tagName.toLowerCase() === 'a' && e.target.getAttribute('href') && !e.target.getAttribute('href').startsWith('#')) {
+                    return;
+                }
+                const texto = this.innerText.trim().toLowerCase();
+                let sectionId = '';
+                // Como ya estamos en la página de servicios, algunos pueden navegar internamente
+                if (texto.includes('contacto')) sectionId = 'contacto';
+                else if (texto.includes('asesoramiento contable')) sectionId = 'asesoramiento-contable';
+                else if (texto.includes('tributario empresarial')) sectionId = 'tributario-empresarial';
+
+                if (sectionId) {
+                    const target = document.getElementById(sectionId);
+                    if (target) {
+                        if (e.target.tagName.toLowerCase() === 'a' && e.target.getAttribute('href') && e.target.getAttribute('href').startsWith('#')) {
+                            e.preventDefault();
+                        }
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            const icon = mobileMenuBtn.querySelector('i');
+                            icon.classList.add('fa-bars');
+                            icon.classList.remove('fa-xmark');
+                        }
+                    }
+                }
+            });
+        });
+
+        // ==========================================
+        // ⚙️ ANIMACIONES AL HACER SCROLL (INTERSECTION OBSERVER)
+        // ==========================================
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-down').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ==========================================
+        // ⚙️ LÓGICA PARA EL MENÚ STICKY
+        // ==========================================
+        window.addEventListener('scroll', function () {
+            const navWrapper = document.getElementById('nav-wrapper');
+            if (window.scrollY > 50) {
+                navWrapper.classList.add('navbar-fixed');
+            } else {
+                navWrapper.classList.remove('navbar-fixed');
+            }
+        });
+
+        // ==========================================
+        // ⚙️ ESTRELLAS DE CALIFICACIÓN (SIMULADOR)
+        // ==========================================
+        const stars = document.querySelectorAll('#star-rating i');
+        const ratingInput = document.getElementById('rating-value');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const val = star.getAttribute('data-rating');
+                ratingInput.value = val;
+                stars.forEach(s => {
+                    if (s.getAttribute('data-rating') <= val) {
+                        s.classList.add('active');
+                        s.classList.remove('fa-regular');
+                        s.classList.add('fa-solid');
+                    } else {
+                        s.classList.remove('active');
+                        s.classList.remove('fa-solid');
+                        s.classList.add('fa-regular');
+                    }
+                });
+            });
+        });
+
+        function resetStars() {
+            stars.forEach(s => {
+                s.classList.add('active');
+                s.classList.remove('fa-regular');
+                s.classList.add('fa-solid');
+            });
+            ratingInput.value = 5;
+        }
+        resetStars(); // Inicializar con 5 estrellas marcadas
+
+        // ==========================================
+        // ⚙️ ENVÍO DE FORMULARIOS A GOOGLE SHEETS
+        // ==========================================
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjhImYrNAMVXxxacIMW8kBl_aMa1dq9CRJsQU_aEEJx1-hh5KAFl4pVtEcw8vpDqfH/exec';
+
+        // 1. Formulario Principal de Contacto
+        const form = document.getElementById('form-google-sheets');
+        const btnEnviar = document.getElementById('btn-enviar');
+        const mensajeEstado = document.getElementById('mensaje-estado');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btnEnviar.innerHTML = '<span class="loader"></span> Enviando...';
+            btnEnviar.disabled = true;
+            mensajeEstado.style.display = 'none';
+            mensajeEstado.className = 'mensaje-estado';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    mensajeEstado.textContent = '¡Mensaje enviado con éxito! Nos contactaremos pronto.';
+                    mensajeEstado.classList.add('exito');
+                    mensajeEstado.style.display = 'block';
+                    btnEnviar.textContent = 'Enviar Mensaje';
+                    btnEnviar.disabled = false;
+                    form.reset();
+                    setTimeout(() => { mensajeEstado.style.display = 'none'; }, 6000);
+                })
+                .catch(error => {
+                    mensajeEstado.textContent = 'Ocurrió un error al enviar. Por favor, intenta de nuevo.';
+                    mensajeEstado.classList.add('error');
+                    mensajeEstado.style.display = 'block';
+                    btnEnviar.textContent = 'Enviar Mensaje';
+                    btnEnviar.disabled = false;
+                });
+        });
+
+        // 2. Mini Formulario del Header (Envía solo 3 campos)
+        const formHeader = document.getElementById('form-header-sheets');
+        const btnEnviarHeader = document.getElementById('btn-enviar-header');
+        const mensajeEstadoHeader = document.getElementById('mensaje-estado-header');
+
+        formHeader.addEventListener('submit', e => {
+            e.preventDefault();
+            btnEnviarHeader.textContent = 'Enviando...';
+            btnEnviarHeader.disabled = true;
+            mensajeEstadoHeader.style.display = 'none';
+            mensajeEstadoHeader.className = 'mensaje-estado';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(formHeader) })
+                .then(response => {
+                    mensajeEstadoHeader.textContent = '¡Solicitud enviada! Te contactaremos a la brevedad.';
+                    mensajeEstadoHeader.classList.add('exito');
+                    mensajeEstadoHeader.style.display = 'block';
+                    btnEnviarHeader.textContent = 'Solicitar asesoría';
+                    btnEnviarHeader.disabled = false;
+                    formHeader.reset();
+                    setTimeout(() => { mensajeEstadoHeader.style.display = 'none'; }, 6000);
+                })
+                .catch(error => {
+                    mensajeEstadoHeader.textContent = 'Ocurrió un error. Por favor, intenta de nuevo.';
+                    mensajeEstadoHeader.classList.add('error');
+                    mensajeEstadoHeader.style.display = 'block';
+                    btnEnviarHeader.textContent = 'Solicitar asesoría';
+                    btnEnviarHeader.disabled = false;
+                });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -57,6 +57,26 @@ a {
     width: 100%;
 }
 
+/* ==========================================
+   LÍMITES INDEPENDIENTES POR SECCIÓN 
+   (Rompe la línea vertical única)
+   ========================================== */
+.nav-wrapper .contenedor {
+    max-width: 95%; /* Ocupa casi todo el ancho para separar el logo y menú */
+}
+
+.hero-contenedor.contenedor {
+    max-width: 1350px; /* Un poco más amplio para los textos principales */
+}
+
+.seccion-contacto .container-section {
+    max-width: 1400px; /* Da más espacio al formulario y la info */
+}
+
+.footer-profesional .contenedor {
+    max-width: 1600px; /* Footer bien extendido */
+}
+
 .seccion-clara { background-color: var(--color-bg-white); }
 .seccion-gris { background-color: var(--color-bg-gray); }
 .seccion-contacto { background-color: var(--color-bg-light); }

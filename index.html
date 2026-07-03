@@ -60,7 +60,6 @@
                                 </li>
                                 <li data-section="carrusel">Galería</li>
                                 <li data-section="contacto">Contacto</li>
-                                <li data-section="cv">Currículum</li>
                             </ul>
                         </nav>
                         <a class="nav-btn-whatsapp nav-btn-destacado" href="https://wa.me/51994076369" target="_blank">
@@ -81,9 +80,10 @@
                     <p>Tenemos amplia experiencia en el sector, nuestros clientes nos reconocen como un <strong>estudio
                             contable</strong> de confianza y preferencia. Contamos con una amplia cartera de clientes
                         nacionales e internacionales. Bienvenido, te invitamos a conocer más sobre nosotros.</p>
-                    <div class="hero-botones">
+                    <div class="hero-botones" style="display: flex; gap: 15px; flex-wrap: wrap;">
                         <button class="btn-solid-accent"
                             onclick="document.getElementById('servicios').scrollIntoView({behavior: 'smooth'})">Servicios</button>
+                        <a href="subpaginas/practicas.html" class="btn-solid-accent" style="background-color: transparent; border: 2px solid white; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center;">Trabaja con Nosotros</a>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="contenedor_boton">
-                    <p>En <strong>MBA Asesoría y Consultoría Empresarial</strong> transformamos números en estrategias.
+                    <p>En <strong>MBA Asesoría y Consultoría Empresarial</strong>, fundado y dirigido por <strong>Michael Bancayan Amaya</strong>, transformamos números en estrategias.
                         Contamos con amplia experiencia brindando soluciones contables, tributarias y financieras a
                         pymes y grandes empresas. Nuestro compromiso es la precisión, transparencia y crecimiento de tu
                         negocio.</p>
@@ -227,6 +227,29 @@
         </div>
     </div>
 
+    <!-- ==========================================
+         UBICACIÓN (MAPA)
+         ========================================== -->
+    <section id="ubicacion" class="seccion-clara" style="padding: 90px 0;">
+        <div class="container-section">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Nuestra Ubicación</h2>
+                <div class="linea-adorno"></div>
+                <p style="text-align: center; color: var(--color-text-muted); margin-bottom: 40px; font-size: 1.1rem;">Visítanos en nuestra oficina principal para una asesoría personalizada.</p>
+            </div>
+            
+            <div class="mapa-container fade-in-up" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1783036053067!6m8!1m7!1sSjwAHh6pqvqlCNxNsJG-pA!2m2!1d-5.41975913357587!2d-80.77725383105022!3f279.94!4f0!5f0.7820865974627469" width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            
+            <div class="text-center fade-in-up" style="text-align: center;">
+                <a href="https://maps.app.goo.gl/RGH7F4DBJLKyBJsZA" target="_blank" class="btn-principal" style="display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
     <section id="contacto" class="seccion-contacto">
         <div class="container-section">
             <div class="titulo-seccion fade-in-up">
@@ -270,12 +293,12 @@
 
                     <div class="cv-caja">
                         <div class="cv-icono">
-                            <i class="fa-solid fa-file-invoice"></i>
+                            <i class="fa-solid fa-circle-question"></i>
                         </div>
                         <div class="cv-contenido">
-                            <h4>Currículum Ejecutivo</h4>
-                            <p>Conoce las credenciales de nuestro equipo y nuestros casos de éxito.</p>
-                            <a href="#cv" class="btn-cv">Ver CV / Propuesta</a>
+                            <h4>¿Tienes Dudas?</h4>
+                            <p>Revisa nuestra sección de preguntas frecuentes para encontrar respuestas rápidas.</p>
+                            <a href="#faq" class="btn-cv" onclick="document.getElementById('faq').scrollIntoView({behavior: 'smooth'})">Ver Preguntas</a>
                         </div>
                     </div>
                 </div>
@@ -342,6 +365,46 @@
                     </form>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PREGUNTAS FRECUENTES (FAQ)
+         ========================================== -->
+    <section id="faq" class="seccion-gris" style="padding: 90px 0;">
+        <div class="container-section">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="linea-adorno"></div>
+                <p style="text-align: center; color: var(--color-text-muted); margin-bottom: 40px; font-size: 1.1rem;">Resolvemos las dudas más comunes de nuestros clientes.</p>
+            </div>
+            
+            <div class="faq-container fade-in-up">
+                <details class="faq-item">
+                    <summary>¿Cómo es el proceso de cambio de contador?</summary>
+                    <div class="faq-content">
+                        <p>Es un proceso muy sencillo. Nosotros nos encargamos de solicitar la documentación necesaria a tu contador anterior (balances, libros, accesos SUNAT) y hacemos la transición de forma segura sin interrumpir tus operaciones comerciales.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>¿En qué régimen tributario debería estar mi negocio?</summary>
+                    <div class="faq-content">
+                        <p>Dependerá de tu nivel de ingresos y actividad. Haremos una evaluación gratuita de tu negocio para recomendarte el régimen (NRUS, RER, MYPE o General) que te permita pagar lo justo y optimizar tus impuestos de forma legal.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Brindan asesoría a empresas fuera de la región?</summary>
+                    <div class="faq-content">
+                        <p>¡Sí! Gracias a la facturación electrónica y sistemas digitales, podemos llevar la contabilidad de tu empresa de manera remota al 100%, sin importar en qué ciudad del Perú te encuentres, con la misma eficiencia.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué pasa si tengo multas pendientes con SUNAT?</summary>
+                    <div class="faq-content">
+                        <p>Realizamos una revisión integral para detectar cualquier contingencia. Si tienes multas, te asesoramos para aplicar al régimen de gradualidad (descuentos) y solicitamos fraccionamientos para que regularices todo sin afectar tu liquidez.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -418,7 +481,7 @@
         <div class="footer-bottom">
             <div class="contenedor">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2026 MBA Asesoría & Consultoría. Todos los derechos reservados.</p>
+                    <p>&copy; 2026 MBA Asesoría & Consultoría por Michael Bancayan Amaya. Todos los derechos reservados.</p>
                     <div class="footer-bottom-links">
                         <a href="#">Políticas de Privacidad</a>
                         <span class="separador">|</span>
@@ -544,7 +607,7 @@
         const btnEnviar = document.getElementById('btn-enviar');
         const mensajeEstado = document.getElementById('mensaje-estado');
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjhImYrNAMVXxxacIMW8kBl_aMa1dq9CRJsQU_aEEJx1-hh5KAFl4pVtEcw8vpDqfH/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxZXDv_WfJMdJb-s_DqZNvWZCrtDs7PaigvMaMQ-XRBbyW01VolI9z5OvjO3Z-xtk6i/exec';
 
         form.addEventListener('submit', e => {
             e.preventDefault();

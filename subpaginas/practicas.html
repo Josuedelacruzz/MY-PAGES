@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Trabaja con Nosotros | MBA Asesoría & Consultoría</title>
+
+    <link rel="icon" href="../imagenes/LOGO MBA.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Archivo principal y el específico de la subpágina -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos_subpaginas.css">
+</head>
+
+<body>
+    <!-- ==========================================
+         SECCIÓN HERO Y NAVEGACIÓN
+         ========================================== -->
+    <header class="header header-full-bg">
+        <div class="header-overlay"></div>
+        <!-- ==========================================
+             MENÚ DE NAVEGACIÓN (EFECTO STICKY)
+             ========================================== -->
+        <div id="nav-wrapper" class="nav-wrapper">
+            <div class="contenedor">
+                <div class="encabezado fade-in-down">
+                    <a href="../index.html" class="logo-empresa">
+                        <img src="../imagenes/LOGO MBA.png" alt="Logo Estudio Contable MBA" class="logo-img">
+                    </a>
+                    <div class="nav-container">
+                        <div class="menu-toggle" id="mobile-menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <nav class="menu menu-blanco" id="nav-menu">
+                            <ul>
+                                <li><a href="../index.html" style="color:inherit; text-decoration:none;"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                                <li><a href="../index.html#sobre" style="color:inherit; text-decoration:none;">Nosotros</a></li>
+                                <li class="dropdown">
+                                    <a href="index2.html" style="color:inherit; text-decoration:none;">Servicios</a> <span class="arrow">▼</span>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index2.html#asesoramiento-contable">Asesoramiento Contable</a></li>
+                                        <li><a href="index2.html#tributario-empresarial">Tributario Empresarial</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../index.html#carrusel" style="color:inherit; text-decoration:none;">Galería</a></li>
+                                <li><a href="../index.html#contacto" style="color:inherit; text-decoration:none;">Contacto</a></li>
+                            </ul>
+                        </nav>
+                        <a class="nav-btn-whatsapp nav-btn-destacado" href="https://wa.me/51994076369" target="_blank">
+                            WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor hero-contenedor">
+            <div class="hero-contenido-inferior" style="margin-top: 80px;">
+                <div class="hero-texto fade-in-up text-center">
+                    <div class="hero-subtitulo" style="justify-content: center;">
+                        <span class="linea-vertical"></span> ÚNETE A NUESTRO EQUIPO
+                    </div>
+                    <h1>Practica con Nosotros</h1>
+                    <p style="margin: 0 auto 30px; max-width: 800px; text-align: center;">Buscamos talento joven y apasionado. Empieza tu carrera profesional en MBA Asesoría & Consultoría y desarrolla tus habilidades en un entorno dinámico.</p>
+                </div>
+            </div>
+
+            <div class="scroll-down-icon fade-in-up" style="animation-delay: 0.5s; justify-content: center;">
+                <a href="#formulario-practicas">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         FORMULARIO DE PRÁCTICAS
+         ========================================== -->
+    <section id="formulario-practicas" class="seccion-clara seccion-contacto">
+        <div class="contenedor">
+            <div class="titulo-seccion fade-in-up">
+                <h2>Formulario de Postulación</h2>
+                <div class="linea-adorno"></div>
+                <p class="subtitulo-central mt-3">Completa tus datos para postular a nuestras oportunidades de prácticas.</p>
+            </div>
+
+            <div class="contacto-wrapper fade-in-up mt-5" style="max-width: 900px; margin: 0 auto;">
+                <div class="contacto-formulario" style="width: 100%;">
+                    <form class="formulario" id="form-practicas-sheets">
+                        <!-- Campo oculto para identificar en Google Sheets qué formulario es -->
+                        <input type="hidden" name="tipo_formulario" value="practicas">
+                        
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="nombres">Nombres y Apellidos *</label>
+                                <input type="text" id="nombres" name="nombre" required placeholder="Tu nombre completo">
+                            </div>
+                            <div class="grupo-input">
+                                <label for="dni">DNI / Carné de Extranjería *</label>
+                                <input type="text" id="dni" name="dni" required placeholder="Número de documento">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="correo">Correo electrónico *</label>
+                                <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="grupo-input">
+                                <label for="telefono">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de celular">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="institucion">Universidad o Instituto *</label>
+                                <input type="text" id="institucion" name="universidad" required placeholder="Lugar de estudios">
+                            </div>
+                            <div class="grupo-input">
+                                <label for="carrera">Carrera / Especialidad *</label>
+                                <input type="text" id="carrera" name="carrera" required placeholder="Ej. Contabilidad, Administración...">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="grupo-input">
+                                <label for="ciclo">Ciclo Actual / Situación *</label>
+                                <div class="select-wrapper">
+                                    <select id="ciclo" name="ciclo" required>
+                                        <option value="" disabled selected>Selecciona tu situación</option>
+                                        <option value="Estudiante (1er a 5to ciclo)">Estudiante (1er a 5to ciclo)</option>
+                                        <option value="Estudiante (6to ciclo a más)">Estudiante (6to ciclo a más)</option>
+                                        <option value="Egresado / Bachiller">Egresado / Bachiller</option>
+                                        <option value="Titulado">Titulado</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grupo-input">
+                                <label for="enlace_cv">Enlace a tu CV (LinkedIn o Drive) (Opcional)</label>
+                                <input type="url" id="enlace_cv" name="enlace_cv" placeholder="https://...">
+                            </div>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="presentacion">Carta de Presentación (Breve) *</label>
+                            <textarea id="presentacion" name="presentacion" rows="4" required placeholder="Cuéntanos por qué quieres hacer tus prácticas con nosotros y qué puedes aportar..."></textarea>
+                        </div>
+
+                        <button type="submit" id="btn-enviar-practicas" class="btn-principal ancho-completo">Enviar Postulación</button>
+                        <div id="mensaje-estado-practicas" class="mensaje-estado"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-profesional" style="margin-top: 50px;">
+        <div class="footer-top">
+            <div class="contenedor footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="../imagenes/LOGO MBA.png" alt="Logo Estudio Contable MBA" class="logo-img"
+                            style="margin-bottom: 20px; max-height: 80px;">
+                    </div>
+                    <p>Transformamos números en estrategias. Soluciones contables, tributarias y financieras para el
+                        crecimiento y éxito de tu negocio.</p>
+                    <div class="redes-sociales">
+                        <a href="https://www.facebook.com/profile.php?id=100092338925636" target="_blank"
+                            class="icono-red"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icono-red"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icono-red"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html#sobre">Nosotros</a></li>
+                        <li><a href="index2.html">Servicios</a></li>
+                        <li><a href="../index.html#carrusel">Galería</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuestros Servicios</h4>
+                    <ul>
+                        <li><a href="index2.html#asesoramiento-contable">Asesoramiento Contable</a></li>
+                        <li><a href="index2.html#tributario-empresarial">Tributario Empresarial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contacto">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="https://maps.app.goo.gl/Wovm9vbF8Jiqnr1x7" target="_blank"><span>Vice y toda la
+                                    región Piura</span></a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=estudiocontablemba2404@gmail.com&"
+                                target="_blank"><span>estudiocontablemba2404@gmail.com</span></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+51 994 076 369</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="contenedor">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> MBA Asesoría & Consultoría por Michael Bancayan Amaya. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         SCRIPTS
+         ========================================== -->
+    <script>
+        // Lógica del menú hamburguesa (Móvil)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+
+        // ==========================================
+        // ⚙️ ANIMACIONES AL HACER SCROLL (INTERSECTION OBSERVER)
+        // ==========================================
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .fade-in-down').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ==========================================
+        // ⚙️ LÓGICA PARA EL MENÚ STICKY (EFECTO BLANCO AL BAJAR)
+        // ==========================================
+        window.addEventListener('scroll', function () {
+            const navWrapper = document.getElementById('nav-wrapper');
+            if (window.scrollY > 50) {
+                navWrapper.classList.add('navbar-fixed');
+            } else {
+                navWrapper.classList.remove('navbar-fixed');
+            }
+        });
+
+        // Script para el envío del formulario a Google Sheets
+        const formPracticas = document.getElementById('form-practicas-sheets');
+        const btnEnviarPracticas = document.getElementById('btn-enviar-practicas');
+        const mensajeEstadoPracticas = document.getElementById('mensaje-estado-practicas');
+        
+        // Pega aquí la URL de Google Apps Script cuando la generes
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxZXDv_WfJMdJb-s_DqZNvWZCrtDs7PaigvMaMQ-XRBbyW01VolI9z5OvjO3Z-xtk6i/exec'; 
+
+        formPracticas.addEventListener('submit', e => {
+            e.preventDefault();
+
+            btnEnviarPracticas.textContent = 'Enviando postulación...';
+            btnEnviarPracticas.disabled = true;
+            mensajeEstadoPracticas.style.display = 'none';
+            mensajeEstadoPracticas.className = 'mensaje-estado';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(formPracticas) })
+                .then(response => {
+                    mensajeEstadoPracticas.textContent = '¡Postulación enviada con éxito! Nos pondremos en contacto contigo.';
+                    mensajeEstadoPracticas.classList.add('exito');
+                    mensajeEstadoPracticas.style.display = 'block';
+                    btnEnviarPracticas.textContent = 'Enviar Postulación';
+                    btnEnviarPracticas.disabled = false;
+                    formPracticas.reset();
+                    setTimeout(() => { mensajeEstadoPracticas.style.display = 'none'; }, 8000);
+                })
+                .catch(error => {
+                    mensajeEstadoPracticas.textContent = 'Ocurrió un error al enviar. Por favor, intenta de nuevo.';
+                    mensajeEstadoPracticas.classList.add('error');
+                    mensajeEstadoPracticas.style.display = 'block';
+                    btnEnviarPracticas.textContent = 'Enviar Postulación';
+                    btnEnviarPracticas.disabled = false;
+                });
+        });
+
+        function mostrarErrorSheet() {
+            mensajeEstadoPracticas.textContent = 'Ocurrió un error al enviar. Por favor, intenta de nuevo.';
+            mensajeEstadoPracticas.classList.add('error');
+            mensajeEstadoPracticas.style.display = 'block';
+            btnEnviarPracticas.textContent = 'Enviar Postulación';
+            btnEnviarPracticas.disabled = false;
+        }
+    </script>
+</body>
+</html>
